@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    background-color:#353540;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navBar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+.navBar ul li{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}

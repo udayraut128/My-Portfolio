@@ -121,14 +121,14 @@ header {
   color: red;
 }
 #home div h2 {
-  font-size: 4rem;
+  font-size: calc(1vw + 2rem);
 }
 
 #home div span {
   color: gold;
 }
 #home .rightSection img {
-  height: 30rem;
+  height: calc(20vw + 5rem);
   width: auto;
 }
 

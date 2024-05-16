@@ -150,11 +150,33 @@ header {
   height: 100vh;
 }
 
-
-@media (max-width:800px) {
-  .navBar {
+.menuIcon {
   display: none;
 }
- 
+@media (max-width:800px) {
+  .navList {
+  display: none;
+}
+ .menuIcon {
+    display: flex;
+    position: absolute;
+    right: 1.3rem;
+    font-size: 1.5rem;
+  }
+ .resButton1 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: white;
+}
+.resButtton2 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  z-index: 200;
+  color: white;
+}
   
 }

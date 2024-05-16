@@ -9,6 +9,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,15 +25,19 @@
         <div class="logo">
           <h1>Uday Raut</h1>
         </div>
-        <div class="navList">
-          <ul>
+          <div class="menuIcon" id="menu">
+            <button class="resButton1"> <i class="fa-solid fa-bars" id="resButtonA"></i></button>
+            <button class="resButtton2"><i class="fa-solid fa-xmark" id="resButtonB"></i></button>
+      </div>
+        <nav class="navList" id="myDiv">
+          <ul class="mainList">
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </nav>
     </header>
     <main>
@@ -70,5 +81,7 @@
         <p>hello</p>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

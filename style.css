@@ -178,5 +178,28 @@ header {
   z-index: 200;
   color: white;
 }
+.resClass {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #353540;
+ 
+}
+.resClass .mainList {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  list-style: none;
+  align-items: center;
+  margin-top: 3rem;
+  
+}
   
 }

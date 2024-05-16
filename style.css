@@ -157,6 +157,10 @@ header {
   .navList {
   display: none;
 }
+.navBar .logo {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
  .menuIcon {
     display: flex;
     position: absolute;

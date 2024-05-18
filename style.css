@@ -184,7 +184,7 @@ header {
   font-size: 1.6rem;
   z-index: 200;
   color: white;
-   animation: smoothbtn 3s ease-in-out;
+   animation: smoothbtn 2s ease-in-out;
 }
 .resClass {
   position: absolute;
@@ -196,7 +196,7 @@ header {
   top: 0;
   z-index: 5;
   background-color: #353540;
-  animation: smooth 3s ease-in-out;
+  animation: smooth 2s ease-in-out;
  
 }
 .resClass .mainList {
@@ -221,9 +221,11 @@ header {
     }
   
 }
+
 @keyframes smoothbtn {
   from {
-    transform: translateX(-100vw);     
+    transform: translateX(-100vw) rotate(360deg);
+        
   }
   to {
     transform-origin: right;
@@ -231,3 +233,8 @@ header {
     }
   
 }
+
+
+
+/*skills  */
+

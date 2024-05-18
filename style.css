@@ -177,10 +177,14 @@ header {
 .resButtton2 {
   border: none;
   outline: none;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
   background-color: transparent;
   font-size: 1.6rem;
   z-index: 200;
   color: white;
+   animation: smoothbtn 3s ease-in-out;
 }
 .resClass {
   position: absolute;
@@ -192,6 +196,7 @@ header {
   top: 0;
   z-index: 5;
   background-color: #353540;
+  animation: smooth 3s ease-in-out;
  
 }
 .resClass .mainList {
@@ -205,5 +210,24 @@ header {
   margin-top: 3rem;
   
 }
+
+@keyframes smooth {
+  from {
+    transform: translateX(-100vw);     
+  }
+  to {
+    transform-origin: right;
+      transform: translateX(0vw);
+    }
+  
+}
+@keyframes smoothbtn {
+  from {
+    transform: translateX(-100vw);     
+  }
+  to {
+    transform-origin: right;
+      transform: translateX(0vw);
+    }
   
 }

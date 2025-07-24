@@ -155,6 +155,7 @@ img {
 }
 .nav__logo {
   color: var(--second-color);
+  font-size: 2rem;
 }
 .nav__toggle {
   color: var(--second-color);
@@ -201,7 +202,7 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: var(--second-color);
 }
 .home__social-icon:hover {
@@ -322,6 +323,74 @@ img {
   transform: scale(1.1);
 }
 
+
+
+
+/* === Project Grid Layout === */
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* === Project Card === */
+.work__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+   
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.work__img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
+}
+
+.work__img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #00ff99;
+}
+
+/* === Description inside Project Card === */
+.work__description {
+  padding: 1rem;
+  
+}
+
+.work__description h3 {
+  font-size: 1.25rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.work__description p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+   
+}
+
+/* === Button Styling === */
+.button {
+  display: inline-block;
+  background-color:var(--first-color);
+   
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #00cc7a;
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -367,9 +436,32 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 320px) {
+   
+   .home__social-icon {
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
+    font-size: 2rem;
+  }
+  .nav__toggle {
+   
+  font-size: 2rem;
+   
+}
+  .nav__logo {
+  color: var(--second-color);
+  font-size: 1.3rem;
+}
+  
+}
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
+  }
+   .home__social-icon {
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
+    font-size: 1rem;
   }
   .home__img {
     width: 200px;
@@ -388,6 +480,7 @@ img {
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
+  
   }
   .home__img {
     width: 300px;
@@ -427,6 +520,11 @@ img {
   .section-title {
     margin-bottom: var(--mb-6);
   }
+  .home__social-icon {
+   
+  font-size: 3rem;
+ 
+}
   .section-title::after {
     width: 80px;
     top: 3rem;

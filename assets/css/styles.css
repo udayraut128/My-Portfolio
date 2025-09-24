@@ -12,7 +12,7 @@
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 1.8rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
@@ -187,6 +187,7 @@ img {
 }
 .home__data {
   align-self: center;
+  
 }
 .home__title {
   font-size: var(--big-font-size);
@@ -212,7 +213,8 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 260px;
+  
+  width: 250px;
 }
 .home__blob {
   fill: var(--first-color);
@@ -518,6 +520,9 @@ img {
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+  .home__title{
+    font-size: 2.5rem;
   }
   .section {
     padding-top: 4rem;

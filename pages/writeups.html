@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Write-ups | Uday Raut | Red Team | Ethical Hacker</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Ethical hacking and penetration testing write-ups from TryHackMe, Hack The Box and practice labs." />
+ <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00ff9c",
+            darkbg: "#0b0f14",
+            card: "#121821"
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+  .nav-item {
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #00ff9c;
+    transition: width 0.3s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+</style>
+</head>
+
+<body class="bg-darkbg text-white font-sans">
+
+<!-- ================= NAVBAR ================= -->
+  <nav class="fixed w-full bg-black/60 backdrop-blur-md z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo / Identity -->
+    <a href="/index.html"
+       class="font-mono text-lg md:text-xl tracking-widest text-primary
+              hover:drop-shadow-[0_0_8px_#00ff9c] transition">
+      uday@redteam<span class="text-white">:~$</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-mono text-sm tracking-wide">
+      <li><a href="/pages/about.html" class="nav-link nav-item">about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link nav-item">skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link nav-item">writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link nav-item">labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link nav-item">certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link nav-item">contact</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-gray-300">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden md:hidden bg-black/90 border-t border-white/5">
+    <ul class="flex flex-col font-mono text-sm tracking-wide px-6 py-4 space-y-4">
+
+      <li><a href="/pages/about.html" class="nav-link mobile-item">> about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link mobile-item">> skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link mobile-item">> writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link mobile-item">> labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link mobile-item">> certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link mobile-item">> contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HEADER ================= -->
+<section class="pt-28 pb-16 px-6 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    Technical <span class="text-primary">Write-ups</span>
+  </h1>
+
+  <p class="text-gray-400 max-w-3xl mx-auto">
+    Step-by-step walkthroughs of legal and authorized penetration testing labs,
+    focusing on methodology, enumeration, exploitation and privilege escalation.
+  </p>
+</section>
+
+<!-- ================= FILTER TAGS ================= -->
+<section class="pb-8 px-6">
+  <div class="max-w-5xl mx-auto flex flex-wrap justify-center gap-3 text-sm">
+
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10 text-primary">
+      All
+    </span>
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10">
+      TryHackMe
+    </span>
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10">
+      Hack The Box
+    </span>
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10">
+      Web
+    </span>
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10">
+      Linux
+    </span>
+    <span class="px-4 py-1 rounded-full bg-card border border-white/10">
+      PrivEsc
+    </span>
+
+  </div>
+</section>
+
+<!-- ================= WRITEUPS GRID ================= -->
+<section class="pb-20 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Write-up Card -->
+    <div class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="text-lg font-semibold mb-2">
+        TryHackMe – Basic Pentesting
+      </h3>
+
+      <p class="text-gray-400 text-sm mb-4">
+        Enumeration of SMB services, weak credentials exploitation
+        and Linux privilege escalation.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-4 text-xs">
+        <span class="px-2 py-1 bg-black/40 rounded">TryHackMe</span>
+        <span class="px-2 py-1 bg-black/40 rounded">Linux</span>
+        <span class="px-2 py-1 bg-black/40 rounded">PrivEsc</span>
+      </div>
+
+      <a href="#"
+         class="text-primary text-sm hover:underline">
+        Read Write-up →
+      </a>
+    </div>
+
+    <!-- Write-up Card -->
+    <div class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="text-lg font-semibold mb-2">
+        Hack The Box – Lame
+      </h3>
+
+      <p class="text-gray-400 text-sm mb-4">
+        Exploiting vulnerable SMB service and gaining root
+        through misconfigured services.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-4 text-xs">
+        <span class="px-2 py-1 bg-black/40 rounded">HackTheBox</span>
+        <span class="px-2 py-1 bg-black/40 rounded">SMB</span>
+        <span class="px-2 py-1 bg-black/40 rounded">Linux</span>
+      </div>
+
+      <a href="#"
+         class="text-primary text-sm hover:underline">
+        Read Write-up →
+      </a>
+    </div>
+
+    <!-- Write-up Card -->
+    <div class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="text-lg font-semibold mb-2">
+        Web Lab – SQL Injection
+      </h3>
+
+      <p class="text-gray-400 text-sm mb-4">
+        Identifying SQL injection vulnerability, data extraction
+        and mitigation discussion.
+      </p>
+
+      <div class="flex flex-wrap gap-2 mb-4 text-xs">
+        <span class="px-2 py-1 bg-black/40 rounded">Web</span>
+        <span class="px-2 py-1 bg-black/40 rounded">SQLi</span>
+        <span class="px-2 py-1 bg-black/40 rounded">OWASP</span>
+      </div>
+
+      <a href="#"
+         class="text-primary text-sm hover:underline">
+        Read Write-up →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= DISCLAIMER ================= -->
+<section class="py-12 bg-black/40 text-center px-6">
+  <p class="text-gray-400 text-sm max-w-4xl mx-auto">
+    ⚠️ All write-ups are based on legally accessible labs and authorized
+    platforms. No real-world systems were harmed.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-white/10">
+  <p>© 2026 Bablu • Ethical Red Team Write-ups</p>
+</footer>
+
+</body>
+<script>
+  // Mobile menu toggle
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Active page highlight
+  const links = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add(
+        "text-primary",
+        "drop-shadow-[0_0_6px_#00ff9c]"
+      );
+    }
+  });
+</script>
+</html>

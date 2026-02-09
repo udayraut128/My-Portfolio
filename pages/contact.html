@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Uday Raut | Red Team | Ethical Hacker</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Contact Uday Raut – Red Team & Ethical Hacker. Connect via LinkedIn, GitHub, TryHackMe, Hack The Box and more." />
+ <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00ff9c",
+            darkbg: "#0b0f14",
+            card: "#121821"
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+  .nav-item {
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #00ff9c;
+    transition: width 0.3s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+</style>
+</head>
+
+<body class="bg-darkbg text-white font-sans">
+
+<!-- ================= NAVBAR ================= -->
+ <nav class="fixed w-full bg-black/60 backdrop-blur-md z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo / Identity -->
+    <a href="/index.html"
+       class="font-mono text-lg md:text-xl tracking-widest text-primary
+              hover:drop-shadow-[0_0_8px_#00ff9c] transition">
+      uday@redteam<span class="text-white">:~$</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-mono text-sm tracking-wide">
+      <li><a href="/pages/about.html" class="nav-link nav-item">about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link nav-item">skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link nav-item">writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link nav-item">labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link nav-item">certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link nav-item">contact</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-gray-300">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden md:hidden bg-black/90 border-t border-white/5">
+    <ul class="flex flex-col font-mono text-sm tracking-wide px-6 py-4 space-y-4">
+
+      <li><a href="/pages/about.html" class="nav-link mobile-item">> about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link mobile-item">> skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link mobile-item">> writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link mobile-item">> labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link mobile-item">> certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link mobile-item">> contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HEADER ================= -->
+<section class="pt-28 pb-16 px-6 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    <span class="text-primary">Contact</span> Me
+  </h1>
+
+  <p class="text-gray-400 max-w-3xl mx-auto">
+    Open to internships, junior pentester roles, collaborations,
+    and cybersecurity discussions.
+  </p>
+</section>
+
+<!-- ================= CONTACT CARDS ================= -->
+<section class="pb-20 px-6">
+  <div class="max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Email -->
+    <a href="mailto:udayraut128@gmail.com"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">Email</h3>
+      <p class="text-gray-400 text-sm">udayraut128@gmail.com</p>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/udayraut128"
+       target="_blank"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">LinkedIn</h3>
+      <p class="text-gray-400 text-sm">linkedin.com/in/udayraut128</p>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/udayraut128"
+       target="_blank"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">GitHub</h3>
+      <p class="text-gray-400 text-sm">github.com/udayraut128</p>
+    </a>
+
+    <!-- TryHackMe -->
+    <a href="https://tryhackme.com/p/udayraut128"
+       target="_blank"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">TryHackMe</h3>
+      <p class="text-gray-400 text-sm">tryhackme.com/p/udayraut128</p>
+    </a>
+
+    <!-- Hack The Box -->
+    <a href="https://app.hackthebox.com/profile/udayraut128"
+       target="_blank"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">Hack The Box</h3>
+      <p class="text-gray-400 text-sm">hackthebox.com</p>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/udayraut128"
+       target="_blank"
+       class="bg-card p-6 rounded-xl border border-white/10 hover:border-primary transition">
+      <h3 class="font-semibold mb-2">Instagram</h3>
+      <p class="text-gray-400 text-sm">@udayraut128</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="py-16 bg-black/40 text-center px-6">
+  <h2 class="text-2xl font-bold mb-4 text-primary">
+    Let’s Connect
+  </h2>
+
+  <p class="text-gray-400 mb-6">
+    If you’re looking for a motivated Red Team fresher or intern,
+    feel free to reach out.
+  </p>
+
+  <a href="../Uday_Raut.pdf"
+     target="_blank"
+     class="bg-primary text-black px-8 py-3 rounded-xl font-semibold">
+    View Resume
+  </a>
+</section>
+
+ <!-- ================= FOOTER ================= -->
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-white/10">
+  <p>© 2026 Uday Raut • Ethical Red Team Contact</p>
+</footer>
+
+</body>
+<script>
+  // Mobile menu toggle
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Active page highlight
+  const links = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add(
+        "text-primary",
+        "drop-shadow-[0_0_6px_#00ff9c]"
+      );
+    }
+  });
+</script>
+</html>

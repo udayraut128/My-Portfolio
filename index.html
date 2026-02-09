@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Uday Raut | Red Team | Ethical Hacker</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Red Team & Ethical Hacker portfolio. Web pentesting, CTFs, vulnerability research, and offensive security projects." />
+  <meta name="keywords" content="Red Team, Ethical Hacker, Pentester, Cyber Security Portfolio" />
+  <meta name="author" content="Uday Raut" />
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00ff9c",
+            darkbg: "#0b0f14",
+            card: "#121821"
+          },
+          fontFamily: {
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+  .nav-item {
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #00ff9c;
+    transition: width 0.3s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+</style>
+
+</head>
+
+<body class="bg-darkbg text-white font-sans">
+
+<!-- ================= NAVBAR ================= -->
+  <nav class="fixed w-full bg-black/60 backdrop-blur-md z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo / Identity -->
+    <a href="/index.html"
+       class="font-mono text-lg md:text-xl tracking-widest text-primary
+              hover:drop-shadow-[0_0_8px_#00ff9c] transition">
+      uday@redteam<span class="text-white">:~$</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-mono text-sm tracking-wide">
+      <li><a href="/pages/about.html" class="nav-link nav-item">about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link nav-item">skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link nav-item">writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link nav-item">labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link nav-item">certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link nav-item">contact</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-gray-300">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden md:hidden bg-black/90 border-t border-white/5">
+    <ul class="flex flex-col font-mono text-sm tracking-wide px-6 py-4 space-y-4">
+
+      <li><a href="/pages/about.html" class="nav-link mobile-item">> about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link mobile-item">> skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link mobile-item">> writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link mobile-item">> labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link mobile-item">> certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link mobile-item">> contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- ================= HERO ================= -->
+ <section class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
+
+  <div class="max-w-3xl">
+
+
+    <!-- Terminal Command -->
+    <p class="text-primary font-mono mb-2">
+      &gt; whoami
+    </p>
+
+    <!-- Hacker Name Output -->
+    <p class="font-mono text-green-400 text-xl mb-4 tracking-widest">
+      uday@redteam:~$ <span class="text-white">Ethical Hacker</span>
+    </p>
+<h2 class="text-3xl md:text-4xl font-mono mb-4 text-primary tracking-wider animate-pulse">
+  [ UDAY RAUT ]
+</h2>
+    <!-- Role -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Red Team <span class="text-primary">Ethical Hacker</span>
+    </h1>
+
+    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+      I simulate real-world cyber attacks to identify vulnerabilities
+      before malicious attackers exploit them.
+      Specialized in web application security, CTFs, and penetration testing.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+      <a href="/pages/projects.html"
+         class="bg-primary text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
+        View Projects
+      </a>
+
+      <a href="/Uday_Raut.pdf"
+         class="border border-primary px-8 py-3 rounded-xl hover:bg-primary hover:text-black transition">
+        Download Resume
+      </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="flex justify-center gap-8 mt-8 text-4xl">
+      <a href="https://github.com/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-white hover:scale-125 transition duration-300">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-[#0A66C2] hover:scale-125 transition duration-300">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://tryhackme.com/p/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-[#00ff9c] hover:scale-125 transition duration-300">
+        <i class="fa-solid fa-user-secret"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= QUICK SKILLS ================= -->
+<section class="py-20 bg-black/40">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-primary mb-10 text-center">
+      Core Red Team Skills
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Reconnaissance</h3>
+        <p class="text-gray-400 text-sm">
+          OSINT, Subdomain Enumeration, Nmap, Directory Bruteforce
+        </p>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Web Exploitation</h3>
+        <p class="text-gray-400 text-sm">
+          SQL Injection, XSS, IDOR, Authentication Bypass
+        </p>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Post Exploitation</h3>
+        <p class="text-gray-400 text-sm">
+          Linux PrivEsc, Credential Dumping, Pivoting
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-primary mb-10 text-center">
+      Featured Projects
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">
+          Web Application Penetration Test
+        </h3>
+
+        <p class="text-gray-400 text-sm mb-4">
+          Identified SQL Injection and IDOR vulnerabilities with full
+          exploitation and remediation steps.
+        </p>
+
+        <a href="#"
+           class="text-primary font-mono text-sm">
+          View Report →
+        </a>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">
+          Hack The Box – Linux Machine
+        </h3>
+
+        <p class="text-gray-400 text-sm mb-4">
+          Initial foothold → privilege escalation → root access.
+        </p>
+
+        <a href="#"
+           class="text-primary font-mono text-sm">
+          Read Write-up →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="pt-20 bg-black/40 text-center pb-8">
+  <h2 class="text-3xl font-bold text-primary mb-4">
+    Let’s Secure Something
+  </h2>
+
+  <p class="text-gray-400 mb-6">
+    Open to internships, junior pentester roles, and security collaborations.
+  </p>
+
+  <a href="/pages/contact.html"
+     class="bg-primary text-black px-10 py-3 rounded-xl font-semibold">
+    Contact Me
+  </a>
+  <p class="text-gray-500 text-sm mt-8 ">
+    ⚠️ All testing performed on legal labs or authorized environments only.
+  </p>
+</section>
+
+ 
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-white/10">
+  <p>© 2026 Uday Raut • Ethical Red Team</p>
+</footer>
+
+</body>
+<script>
+  // Mobile menu toggle
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Active page highlight
+  const links = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add(
+        "text-primary",
+        "drop-shadow-[0_0_6px_#00ff9c]"
+      );
+    }
+  });
+</script>
+
+</html>

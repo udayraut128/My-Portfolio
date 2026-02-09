@@ -1,306 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Uday Raut | Red Team | Ethical Hacker</title>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!-- SEO -->
+  <meta name="description" content="Red Team & Ethical Hacker portfolio. Web pentesting, CTFs, vulnerability research, and offensive security projects." />
+  <meta name="keywords" content="Red Team, Ethical Hacker, Pentester, Cyber Security Portfolio" />
+  <meta name="author" content="Uday Raut" />
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Uday Raut</a>
-                </div>
+      
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00ff9c",
+            darkbg: "#0b0f14",
+            card: "#121821"
+          },
+          fontFamily: {
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+  .nav-item {
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #00ff9c;
+    transition: width 0.3s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+</style>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+</head>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Uday Raut</span><br> Full Stack Developer 
-                      </h1>
+<body class="bg-darkbg text-white font-sans">
 
-                    <a href="Uday_Raut.pdf" class="button" download="resume.jpg">Resume</a>
-                </div>
+<!-- ================= NAVBAR ================= -->
+  <nav class="fixed w-full bg-black/60 backdrop-blur-md z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/udayraut128" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/udayraut128" class="home__social-icon" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.github.com/udayraut128" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                </div>
+    <!-- Logo / Identity -->
+    <a href="/index.html"
+       class="font-mono text-lg md:text-xl tracking-widest text-primary
+              hover:drop-shadow-[0_0_8px_#00ff9c] transition">
+      uday@redteam<span class="text-white">:~$</span>
+    </a>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="70" href="assets/img/udayraut1.png">
-                        </g>
-                    </svg>
-                </div>
-            </section>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-mono text-sm tracking-wide">
+      <li><a href="/pages/about.html" class="nav-link nav-item">about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link nav-item">skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link nav-item">writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link nav-item">labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link nav-item">certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link nav-item">contact</a></li>
+    </ul>
 
-            <!--===== ABOUT =====-->
- <section class="about section" id="about">
-  <h2 class="section-title">About</h2>
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-gray-300">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-  <div class="about__container bd-grid">
-    <div class="about__img">
-      <img src="assets/img/udayraut.png" alt="Uday Raut">
-    </div>
-
-    <div>
-      <h2 class="about__subtitle">I'm Uday Raut</h2>
-
-      <p class="about__text">
-        I am a passionate Full Stack Developer skilled in crafting modern, scalable web applications using <strong>React.js</strong> for the frontend and <strong>Django & Python</strong> for the backend. I also work with <strong>MongoDB</strong> and <strong>Firebase</strong> for efficient data storage and real-time features.
-        <br><br>
-        With a growing interest in <strong>Artificial Intelligence and Machine Learning</strong>, I enjoy integrating smart features using tools like <strong>Scikit-learn</strong>, <strong>TensorFlow</strong>, and <strong>Pandas</strong>. Always eager to learn and explore new technologies, I focus on building solutions that are both impactful and user-centric.
-      </p>
-    </div>
   </div>
-</section>
 
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden md:hidden bg-black/90 border-t border-white/5">
+    <ul class="flex flex-col font-mono text-sm tracking-wide px-6 py-4 space-y-4">
 
-            <!--===== SKILLS =====-->
-            
-<section class="skills section" id="skills">
-  <h2 class="section-title">Skills</h2>
+      <li><a href="/pages/about.html" class="nav-link mobile-item">> about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link mobile-item">> skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link mobile-item">> writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link mobile-item">> labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link mobile-item">> certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link mobile-item">> contact</a></li>
 
-  <div class="skills__container bd-grid">
-    <div>
-      <h2 class="skills__subtitle">Development Skills</h2>
-      <p class="skills__text">
-        I'm skilled in building full-stack web applications using modern frontend and backend technologies. My core stack includes <strong>React.js</strong> for frontend and <strong>Django with Python</strong> for backend development. I also work with <strong>MongoDB</strong>, <strong>Firebase</strong>, and REST APIs, and have growing experience in AI/ML.
-      </p>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bxl-react skills__icon"></i>
-          <span class="skills__name">React.js</span>
-        </div>
-        <div class="skills__bar skills__react"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bxl-python skills__icon"></i>
-          <span class="skills__name">Python</span>
-        </div>
-        <div class="skills__bar skills__python"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bx-code-block skills__icon"></i>
-          <span class="skills__name">Django</span>
-        </div>
-        <div class="skills__bar skills__django"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bxl-mongodb skills__icon"></i>
-          <span class="skills__name">MongoDB</span>
-        </div>
-        <div class="skills__bar skills__mongodb"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bx-cloud skills__icon"></i>
-          <span class="skills__name">Firebase</span>
-        </div>
-        <div class="skills__bar skills__firebase"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bx-plug skills__icon"></i>
-          <span class="skills__name">REST API</span>
-        </div>
-        <div class="skills__bar skills__api"></div>
-      </div>
-
-      <div class="skills__data">
-        <div class="skills__names">
-          <i class="bx bx-brain skills__icon"></i>
-          <span class="skills__name">AI / ML (Sklearn, Pandas, TensorFlow)</span>
-        </div>
-        <div class="skills__bar skills__ml"></div>
-      </div>
-    </div>
-
-    <div>
-      <img src="assets/img/work3.jpg" alt="fullstack-skills" class="skills__img">
-    </div>
+    </ul>
   </div>
-</section>
+</nav>
 
 
 
 
+<!-- ================= HERO ================= -->
+ <section class="min-h-screen flex items-center justify-center text-center px-6 pt-20">
 
- <section class="work section" id="projects">
-  <h2 class="section-title">Projects</h2>
+  <div class="max-w-3xl">
 
-  <div class="work__container bd-grid">
 
-    <!-- Blog App (React + Django) -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="Full Stack Blog App">
-      <div class="work__content">
-        <h3 class="work__title">Blog Platform (React + Django)</h3>
-        <p class="work__description">
-          A full stack blog application with user authentication, post creation, and comment features using React.js frontend and Django REST API backend.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
+    <!-- Terminal Command -->
+    <p class="text-primary font-mono mb-2">
+      &gt; whoami
+    </p>
+
+    <!-- Hacker Name Output -->
+    <p class="font-mono text-green-400 text-xl mb-4 tracking-widest">
+      uday@redteam:~$ <span class="text-white">Ethical Hacker</span>
+    </p>
+<h2 class="text-3xl md:text-4xl font-mono mb-4 text-primary tracking-wider animate-pulse">
+  [ UDAY RAUT ]
+</h2>
+    <!-- Role -->
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      Red Team <span class="text-primary">Ethical Hacker</span>
+    </h1>
+
+    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+      I simulate real-world cyber attacks to identify vulnerabilities
+      before malicious attackers exploit them.
+      Specialized in web application security, CTFs, and penetration testing.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+      <a href="/pages/projects.html"
+         class="bg-primary text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
+        View Projects
+      </a>
+
+      <a href="/Uday_Raut.pdf"
+         class="border border-primary px-8 py-3 rounded-xl hover:bg-primary hover:text-black transition">
+        Download Resume
+      </a>
     </div>
 
-    <!-- Student Management System -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="Student Management System">
-      <div class="work__content">
-        <h3 class="work__title">Student Management System</h3>
-        <p class="work__description">
-          A Django-based web app for managing students, subjects, results, and login system for admins, students, and staff. Uses PostgreSQL.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
-    </div>
+    <!-- Social Links -->
+    <div class="flex justify-center gap-8 mt-8 text-4xl">
+      <a href="https://github.com/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-white hover:scale-125 transition duration-300">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-    <!-- Resume Parser AI -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="Resume Parser AI">
-      <div class="work__content">
-        <h3 class="work__title">Resume Parser (AI/NLP)</h3>
-        <p class="work__description">
-          A Python-based NLP project using spaCy to extract name, skills, and experience from uploaded resume PDFs. Great for HR automation.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
-    </div>
+      <a href="https://www.linkedin.com/in/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-[#0A66C2] hover:scale-125 transition duration-300">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-    <!-- ML Model Deployment -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="ML Model Deployment">
-      <div class="work__content">
-        <h3 class="work__title">ML Model Deployment </h3>
-        <p class="work__description">
-          Trained a simple Logistic Regression model and deployed it using Flask for live predictions. Includes HTML frontend for input.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
-    </div>
-
-    <!-- Firebase Auth System -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="Firebase Auth System">
-      <div class="work__content">
-        <h3 class="work__title">Firebase Auth System</h3>
-        <p class="work__description">
-          Simple web authentication system using Firebase Auth (Email & Password) and Firestore to manage user sessions and store profile data.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
-    </div>
-
-    <!-- Portfolio Website -->
-    <div class="work__img">
-      <img src="assets/img/work1.jpg" alt="Portfolio Website">
-      <div class="work__content">
-        <h3 class="work__title">Portfolio Website</h3>
-        <p class="work__description">
-          Personal portfolio website built using HTML, CSS, and JavaScript to showcase projects, skills, and contact details. Clean and fully responsive.
-        </p>
-        <a href="https://github.com/udayraut128" target="_blank" class="button work__button">View Code</a>
-      </div>
+      <a href="https://tryhackme.com/p/udayraut128"
+         target="_blank"
+         class="text-gray-400 hover:text-[#00ff9c] hover:scale-125 transition duration-300">
+        <i class="fa-solid fa-user-secret"></i>
+      </a>
     </div>
 
   </div>
 </section>
 
 
+
+<!-- ================= QUICK SKILLS ================= -->
+<section class="py-20 bg-black/40">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-primary mb-10 text-center">
+      Core Red Team Skills
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Reconnaissance</h3>
+        <p class="text-gray-400 text-sm">
+          OSINT, Subdomain Enumeration, Nmap, Directory Bruteforce
+        </p>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Web Exploitation</h3>
+        <p class="text-gray-400 text-sm">
+          SQL Injection, XSS, IDOR, Authentication Bypass
+        </p>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="font-semibold mb-2">Post Exploitation</h3>
+        <p class="text-gray-400 text-sm">
+          Linux PrivEsc, Credential Dumping, Pivoting
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PROJECTS ================= -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-primary mb-10 text-center">
+      Featured Projects
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">
+          Web Application Penetration Test
+        </h3>
+
+        <p class="text-gray-400 text-sm mb-4">
+          Identified SQL Injection and IDOR vulnerabilities with full
+          exploitation and remediation steps.
+        </p>
+
+        <a href="#"
+           class="text-primary font-mono text-sm">
+          View Report →
+        </a>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl border border-white/10">
+        <h3 class="text-xl font-semibold mb-2">
+          Hack The Box – Linux Machine
+        </h3>
+
+        <p class="text-gray-400 text-sm mb-4">
+          Initial foothold → privilege escalation → root access.
+        </p>
+
+        <a href="#"
+           class="text-primary font-mono text-sm">
+          Read Write-up →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="pt-20 bg-black/40 text-center pb-8">
+  <h2 class="text-3xl font-bold text-primary mb-4">
+    Let’s Secure Something
+  </h2>
+
+  <p class="text-gray-400 mb-6">
+    Open to internships, junior pentester roles, and security collaborations.
+  </p>
+
+  <a href="/pages/contact.html"
+     class="bg-primary text-black px-10 py-3 rounded-xl font-semibold">
+    Contact Me
+  </a>
+  <p class="text-gray-500 text-sm mt-8 ">
+    ⚠️ All testing performed on legal labs or authorized environments only.
+  </p>
+</section>
 
  
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-white/10">
+  <p>© 2026 Uday Raut • Ethical Red Team</p>
+</footer>
 
-            <!--===== CONTACT =====-->
-            
-
-            <section class="contact section" id="contact">
-  <h2 class="section-title">Contact Me</h2>
-
-  <div class="contact__container bd-grid">
-    <form action="https://formsubmit.co/rautuday75@gmail.com" method="POST" class="contact__form">
-      <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
-      <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
-      <textarea name="message" placeholder="Your Message" class="contact__input" required></textarea>
-      
-      <!-- Optional honeypot field to reduce spam -->
-      <input type="text" name="_honey" style="display:none">
-      
-      <!-- Optional settings -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://your-portfolio-url.com/thankyou.html">
-      
-      <input type="submit" value="Send Message" class="contact__button button">
-    </form>
-  </div>
-</section>
-
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Uday Raut</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/udayraut128" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/udayraut128" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.github.com/udayraut128" class="footer__icon"><i class='bx bxl-github' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Uday Raut. All rigths reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+</body>
 <script>
-  const form = document.getElementById("contact-form");
+  // Mobile menu toggle
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
 
-  form.addEventListener("submit", function (e) {
-    // Delay input clearing to give time for redirection (_next)
-    setTimeout(() => {
-      form.reset();  // clears all form fields
-    }, 100); // Short delay so FormSubmit works properly
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Active page highlight
+  const links = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add(
+        "text-primary",
+        "drop-shadow-[0_0_6px_#00ff9c]"
+      );
+    }
   });
 </script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>

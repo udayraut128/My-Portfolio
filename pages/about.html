@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <title>About | Red Team | Ethical Hacker</title>
+
+  <!-- SEO -->
+  <meta name="description" content="About Uday Raut – Red Team enthusiast and ethical hacker focused on offensive security, penetration testing, and CTFs." />
+ <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00ff9c",
+            darkbg: "#0b0f14",
+            card: "#121821"
+          },
+          fontFamily: {
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+  .nav-item {
+    position: relative;
+    transition: color 0.3s;
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: #00ff9c;
+    transition: width 0.3s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+</style>
+</head>
+
+<body class="bg-darkbg text-white font-sans">
+
+<!-- ================= NAVBAR ================= -->
+  <nav class="fixed w-full bg-black/60 backdrop-blur-md z-50 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- Logo / Identity -->
+    <a href="/index.html"
+       class="font-mono text-lg md:text-xl tracking-widest text-primary
+              hover:drop-shadow-[0_0_8px_#00ff9c] transition">
+      uday@redteam<span class="text-white">:~$</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-mono text-sm tracking-wide">
+      <li><a href="/pages/about.html" class="nav-link nav-item">about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link nav-item">skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link nav-item">writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link nav-item">labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link nav-item">certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link nav-item">contact</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl text-gray-300">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="hidden md:hidden bg-black/90 border-t border-white/5">
+    <ul class="flex flex-col font-mono text-sm tracking-wide px-6 py-4 space-y-4">
+
+      <li><a href="/pages/about.html" class="nav-link mobile-item">> about</a></li>
+      <li><a href="/pages/skills.html" class="nav-link mobile-item">> skills</a></li>
+      <li><a href="/pages/writeups.html" class="nav-link mobile-item">> writeups</a></li>
+      <li><a href="/pages/labs.html" class="nav-link mobile-item">> labs</a></li>
+      <li><a href="/pages/certifications.html" class="nav-link mobile-item">> certs</a></li>
+      <li><a href="/pages/contact.html" class="nav-link mobile-item">> contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= ABOUT HERO ================= -->
+<section class="pt-28 sm:pb-16 pb-2 px-6 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+    About <span class="text-primary">Me</span>
+  </h1>
+
+  <p class="text-gray-400 max-w-3xl mx-auto leading-relaxed">
+    Offensive security enthusiast with a strong focus on ethical hacking,
+    penetration testing, and real-world attack simulations.
+  </p>
+</section>
+
+<!-- ================= ABOUT CONTENT ================= -->
+<section class="py-16 px-6">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+
+    <!-- LEFT -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4 text-primary">Who I Am</h2>
+
+      <p class="text-gray-400 leading-relaxed mb-4">
+        I am a cybersecurity practitioner specializing in <strong>Red Team
+        operations</strong>. My learning is hands-on and lab-driven, focusing
+        on how attackers think, move, and exploit weaknesses in systems.
+      </p>
+
+      <p class="text-gray-400 leading-relaxed mb-4">
+        I actively practice on platforms like <strong>Hack The Box</strong>,
+        <strong>TryHackMe</strong>, and simulated vulnerable environments to
+        build real-world attack methodologies.
+      </p>
+
+      <p class="text-gray-400 leading-relaxed">
+        My goal is to help organizations identify and fix vulnerabilities
+        before malicious attackers can exploit them.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="bg-card p-6 rounded-xl border border-white/10">
+      <h2 class="text-2xl font-bold mb-4 text-primary">Quick Profile</h2>
+
+      <ul class="space-y-3 text-gray-400 text-sm">
+        <li><strong class="text-white">Role:</strong> Red Team / Ethical Hacker</li>
+        <li><strong class="text-white">Focus:</strong> Web & Network Pentesting</li>
+        <li><strong class="text-white">Practice:</strong> CTFs & Labs</li>
+        <li><strong class="text-white">Tools:</strong> Nmap, Burp, Metasploit</li>
+        <li><strong class="text-white">Mindset:</strong> Ethical & Legal Testing</li>
+      </ul>
+
+      <div class="mt-6">
+        <a href="../Uday_Raut.pdf"
+           target="_blank"
+           class="inline-block bg-primary text-black px-6 py-3 rounded-xl font-semibold">
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ETHICS ================= -->
+<section class="py-16 bg-black/40 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-2xl font-bold mb-4 text-primary">
+      Ethics & Responsibility
+    </h2>
+
+    <p class="text-gray-400 leading-relaxed">
+      All my security testing activities are performed strictly on
+      <strong>authorized systems</strong>, <strong>legal labs</strong>,
+      or environments where explicit permission is granted.
+      I strongly follow responsible disclosure practices.
+    </p>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="py-16 text-center px-6">
+  <h2 class="text-3xl font-bold mb-8">
+    Want to See My Work?
+  </h2>
+
+  <a href="skills.html"
+     class="bg-primary  text-black px-8 py-3 rounded-xl font-semibold">
+    View My Skills
+  </a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-6 text-center text-gray-500 text-sm border-t border-white/10">
+  <p>© 2026 Uday Raut • Ethical Red Team About</p>
+</footer>
+
+<!-- JS -->
+<script src="../assets/js/main.js"></script>
+
+</body>
+<script>
+  // Mobile menu toggle
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  // Active page highlight
+  const links = document.querySelectorAll(".nav-link");
+  const currentPage = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add(
+        "text-primary",
+        "drop-shadow-[0_0_6px_#00ff9c]"
+      );
+    }
+  });
+</script>
+</html>
